@@ -4,7 +4,7 @@ import { Route, Redirect, HashRouter, Switch } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import PostCardListContainer from '../containers/PostCardListContainer';
-import PostInfoContainer from '../containers/PostInfoContainer';
+// import PostInfoContainer from '../containers/PostInfoContainer';
 
 const Root = ({ store }) => (
     <Provider store={store}>
@@ -15,7 +15,6 @@ const Root = ({ store }) => (
 		        <Switch>
 		        	<Redirect exact from='/' to='/posts' />
 		        	<Route exact path='/posts' component={ PostCardListContainer } />
-                    <Route exact path='/posts/:postId' component={ PostInfoContainer } />
 		        </Switch>
 
                 <Footer />

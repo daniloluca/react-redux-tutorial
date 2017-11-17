@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col } from 'react-materialize';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const img = {
     width: '100%',
@@ -14,9 +14,9 @@ const cardContainer = {
 
 const PostCard = ({ data }) => (
     <Col m={4} s={4} style={ cardContainer } >
-        <Link to={`/posts/${data.id}`} className='waves-effect waves-light'>
+        <a to={`/posts/${data.id}`} className='waves-effect waves-light'>
             <img alt='' style={ img } src={ data.img } />
-        </Link>
+        </a>
     </Col>
 );
 

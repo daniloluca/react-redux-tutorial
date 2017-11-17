@@ -16,16 +16,6 @@ const middleware = store => next => action => {
                 }
             );
             break;
-        case 'GET_POST_INFO':
-            get('5a0dbf202e0000f73e3a3011').then(
-                res => {
-                    next(actions.receivePostInfo(res.data));
-                },
-                err => {
-                    next(actions.receivePostInfoError(err));
-                }
-            );
-            break;
         default:
             break;
     }
