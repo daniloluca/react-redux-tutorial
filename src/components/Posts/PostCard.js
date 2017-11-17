@@ -15,7 +15,7 @@ const cardContainer = {
 const PostCard = ({ data }) => (
     <Col m={4} s={4} style={ cardContainer } >
         <Link to={`/posts/${data.id}`} className='waves-effect waves-light'>
-            <img style={ img } src={ data.img } />
+            <img alt='' style={ img } src={ data.img } />
         </Link>
     </Col>
 );
